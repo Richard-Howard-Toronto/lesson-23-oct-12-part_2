@@ -27,7 +27,7 @@ Location.create(
   image: "http://www.bcplace.com/images/see-all-events-bg-7129c54c47ec2b9c1a7c941f8f020982.jpg",
 )
 
-20.times do
+5.times do
 
   Event.create(
     name: FFaker::Sport.name,
