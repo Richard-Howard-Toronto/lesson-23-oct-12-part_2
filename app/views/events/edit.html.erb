@@ -1,4 +1,10 @@
 
-<h1>You are now editing an event:  <%= link_to @event.name, event_path(@event) %></h1>
+<h1>You are now editing an event:
+  <%= link_to(@event.name, event_path(@event)) %>
+</h1>
 
 <%= render 'event_form', event: @event %>
+
+<p> Display all events </p>
+
+<%= link_to 'all events', events_path() %>
