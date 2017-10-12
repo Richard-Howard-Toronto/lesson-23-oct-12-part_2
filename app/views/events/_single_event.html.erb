@@ -8,3 +8,13 @@
   <h4> The event date is... <%= event.date %> </h4>
   <h4> Capacity is... <%= event.capacity %> </h4>
 </div>
+
+
+<p>
+  <%= link_to 'Edit event ...' , edit_event_path(event) %>
+<p>
+
+<p>
+  <br>
+  <%= link_to 'Show all events', event_path(event) %>
+</p>
