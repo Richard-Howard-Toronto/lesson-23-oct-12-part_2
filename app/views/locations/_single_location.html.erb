@@ -1,0 +1,18 @@
+
+
+<h1> _single_location.html.erb </h1>
+<h2> partial </h2>
+
+
+<div class = "location" >
+
+  <h3> <%= location.name %> </h3>
+  <h4> the city is... <%= location.city %> </h4>
+  <br />
+  <%= link_to image_tag(location.image, class: "location"), location_path(location) %>
+
+</div>
+
+<p>
+  <%= link_to 'Edit it...' , edit_location_path(location) %>
+<p>
